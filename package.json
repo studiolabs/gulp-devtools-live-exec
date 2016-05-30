@@ -1,0 +1,33 @@
+{
+  "name": "gulp-devtools-live-exec",
+  "version": "0.0.2",
+  "description": "Gulp plugin to use devtools live",
+  "main": "exec.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StudioLabs/gulp-devtools-live-exec.git"
+  },
+  "keywords": [
+    "devtools",
+    "live",
+    "gulp"
+  ],
+  "author": "Steed Monteiro <steed.monteiro@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StudioLabs/gulp-devtools-live-exec/issues"
+  },
+  "homepage": "https://github.com/StudioLabs/gulp-devtools-live-exec",
+  "dependencies": {
+    "convert-source-map": "^1.2.0",
+    "event-stream": "^3.3.2",
+    "source-map": "^0.5.3",
+    "through2": "^2.0.0",
+    "utf8": "^2.1.1",
+    "vinyl": "^1.1.1"
+  },
+  "devDependencies": {}
+}
