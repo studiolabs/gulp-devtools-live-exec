@@ -1,6 +1,6 @@
 {
   "name": "gulp-devtools-live-exec",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Gulp plugin to use devtools live",
   "main": "exec.js",
   "scripts": {

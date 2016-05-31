@@ -14,6 +14,7 @@ var convertSourceMap = require('convert-source-map');
 function ExecDevTools(options) {
     this.src = path.resolve(options.src);
     this.cmd = options.cmd;
+    this.reload = options.reload || false;
     this.url = options.url || options.src ;
     this.useSourceStream = options.useSourceStream || false;
    	this.stream = null;
@@ -166,7 +167,11 @@ ExecDevToolsFile.prototype.pushFile = function(content) {
 
     record.content = this.saveFile(this.file.output, content);
 
-    this.devtoolsLive.broadcast(record);
+    if(this.plugin.reload){
+    	this.devtoolsLive.reload();
+    }else{
+    	this.devtoolsLive.broadcast(record);
+    }
 
 };
 
